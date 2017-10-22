@@ -1,0 +1,42 @@
+.btn {
+    &-roundless {
+        border-radius: 0 !important;
+    }
+    &:hover {
+        color: white;
+    }
+    &-circle {
+        border-radius: 50%;
+    }
+    &-border-none {
+        border: none;
+    }
+    &-blk {
+        display: inline-block;
+        width: auto;
+        @media #{$small-and-down} {
+            display: block;
+            width: 100%;
+        }
+        &-imp {
+            display: block !important;
+        }
+    }
+
+    &-half {
+        width: 50%;
+    }
+    // TODO change it
+    &-dimen {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        line-height: 20px;
+    }
+}
+// TODO
+.input-group-btn {
+    .btn {
+        padding-bottom: 10px;
+    }
+}

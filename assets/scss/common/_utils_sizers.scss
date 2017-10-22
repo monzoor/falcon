@@ -1,0 +1,98 @@
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$devices: s m l;
+
+$sizes: (
+	"f": 0,
+	"xs": $b-space-xs,
+	"s": $b-space-s,
+	"m": $b-space,
+	"l": $b-space-l,
+	"xl": $b-space-xl
+);
+
+$padding: (
+	"pa": "padding",
+	"pt": "padding-top",
+	"pb": "padding-bottom",
+	"pl": "padding-left",
+	"pr": "padding-right",
+);
+
+$margin: (
+	"ma": "margin",
+	"mt": "margin-top",
+	"mb": "margin-bottom",
+	"ml": "margin-left",
+	"mr": "margin-right",
+);
+
+
+@each $device in $devices {
+
+	// -------------------------------------
+	//   Padding
+	// -------------------------------------
+	@each $padding_type, $padding_type_value in $padding {
+		@each $size_type, $size_value in $sizes {
+			@if $device == 's'{
+				.#{$padding_type}-#{$size_type}--#{$device} {
+					#{$padding_type_value}: #{$size_value} !important;
+				}
+			}
+			@else if $device == 'm'{
+				@media #{$medium-and-up}{
+					.#{$padding_type}-#{$size_type}--#{$device} {
+						#{$padding_type_value}: #{$size_value} !important;
+					}
+				}
+			}
+			@else {
+				@media #{$large-and-up}{
+					.#{$padding_type}-#{$size_type}--#{$device} {
+						#{$padding_type_value}: #{$size_value} !important;
+					}
+				}
+			}
+		}
+	}
+
+	// -------------------------------------
+	//   margin
+	// -------------------------------------
+	@each $margin_type, $margin_type_value in $margin {
+		@each $size_type, $size_value in $sizes {
+			@if $device == 's'{
+				.#{$margin_type}-#{$size_type}--#{$device} {
+					#{$margin_type_value}: #{$size_value} !important;
+				}
+			}
+			@else if $device == 'm'{
+				@media #{$medium-and-up}{
+					.#{$margin_type}-#{$size_type}--#{$device} {
+						#{$margin_type_value}: #{$size_value} !important;
+					}
+				}
+			}
+			@else {
+				@media #{$large-and-up}{
+					.#{$margin_type}-#{$size_type}--#{$device} {
+						#{$margin_type_value}: #{$size_value} !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media print{
+	.pt-l--p{
+		padding-top: $b-space-l !important;
+	}
+}
+
+.mza {
+	margin: 0 auto;
+}

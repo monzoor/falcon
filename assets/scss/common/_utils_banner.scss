@@ -1,0 +1,12 @@
+.banner {
+    position: relative;
+    .overlay-text-wrapper {
+        position: absolute;
+        &.pos {
+            &-bottom-right {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    }
+}

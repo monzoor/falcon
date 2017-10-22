@@ -1,0 +1,72 @@
+/*----------------------- Top Header---------------------------------*/
+
+.header_top {
+    border-bottom: 1px solid #dddfe2;
+    .navbar {
+        min-height: 17px;
+    }
+  li {
+      padding: 0;
+      border-right: 1px solid #dddfe2;
+      padding: 0 10px 0 10px;
+      &:last-child {
+          border-right: 0px solid #dddfe2;
+          padding-right: 0
+      }
+      &:first-child {
+          padding-left: 0
+      }
+      a {
+        color: #333333;
+        padding: 0;
+        @extend .text-xs;
+        &:hover {
+            background-color: transparent;
+            border-bottom: 1px solid black;
+        }
+      }
+  }
+}
+.logo {
+    &.small {
+        width: 120px;
+    }
+}
+
+// TODO
+.navbar-right {
+    li {
+        a{
+            // white-space: nowrap;
+        }
+    }
+}
+
+// TODO
+.nav-right-section{
+  li{
+    float: left;
+  }
+}
+
+.footer-icon-list{
+  li{
+    @media screen and (max-width: $small-screen) {
+      float: left;
+      }
+    }
+  }
+
+.cart-count{
+     position: relative;
+
+        .cart-qty{
+          position: absolute;
+          left: 30px;
+          width: 20px;
+          height: 20px;
+          line-height: 18px;
+          font-weight: normal;
+          border-radius: 50%;
+    }
+}

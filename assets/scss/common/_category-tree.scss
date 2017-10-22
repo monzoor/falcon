@@ -1,0 +1,51 @@
+.category-tree-list {
+    list-style-position: inside;
+    li {
+        position: relative;
+        @extend .text-s;
+        @extend .mb-s--s;
+    a {
+        @extend .black-text;
+    }
+    label {
+        // padding-left: 20px;
+        font-weight: normal;
+        @extend .mb-f--s;
+    }
+    input {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: -4px;
+        top: 4px;
+        opacity: 0;
+        cursor: pointer;
+        margin-top: 0px;
+        + ul {
+            height: 24px;
+            margin: -25px 0 0 0;
+            width: 100%;
+            background: url(../img/icon/right-arrow.svg) no-repeat 100% 6px;
+            > li {
+                display: none;
+                margin-left: 20px;
+                &:first-child {
+                    margin-top: 30px;
+                }
+            }
+        }
+        &:checked + ul {
+            height: auto;
+            background: url("../img/icon/down-arrow.svg") no-repeat 100% 6px;
+            display: inline-block;
+            > li {
+                display: block;
+
+                &:last-child {
+                    @extend .mb-f--s;
+                }
+            }
+        }
+    }
+    }
+}

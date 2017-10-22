@@ -1,0 +1,34 @@
+.home-slider {
+    position: relative;
+    .flex-viewport { height: 100%; }
+    .flex-control-nav { bottom: 20px; }
+    .slides {
+        height: 100%;
+        li {
+            height: 100%;
+        }
+    }
+    .slide-image {
+        img {
+            width: 100%;
+        }
+    }
+    .flex-direction-nav a.flex-next{
+        padding-top: 8px;
+        opacity: 1;
+        right: 20px;
+        &:before {
+            font-family: "shoparu";
+            content: '\e811';
+        }
+    }
+    .flex-direction-nav a.flex-prev{
+        padding-top: 8px;
+        opacity: 1;
+        left: 20px;
+        &:before {
+            font-family: "shoparu";
+            content: '\e80f';
+        }
+    }
+}

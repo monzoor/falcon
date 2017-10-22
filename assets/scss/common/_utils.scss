@@ -1,0 +1,39 @@
+// TODO
+.center {
+    float: none;
+    margin: 0 auto;
+}
+.div-center {
+    float: none;
+    margin: 0 auto;
+}
+.center-abs{
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  margin: 0 auto;
+}
+
+.bd {
+    &-b {
+        border-bottom: 1px solid #dddfe2;
+    }
+}
+
+.no-bg-hover {
+    li {
+        a {
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.breadcrumb > li + li:before {
+    content: ">"
+}
+
+.div-hide {
+    display: none;
+}

@@ -1,0 +1,27 @@
+/*PAGE: Category Viewer
+
+===========================  ********S-2********    ========================*/
+
+.feature-listing {
+  background: rgba(225, 226, 209, 0.22);
+  padding: 10px;
+}
+
+.cat-inner-feat {
+  box-shadow: 1px 2px 2px #ddd;
+}
+
+.feature-listing {
+  h3 {
+    margin: 0px;
+  }
+  ul li a {
+    color: #000000;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.grid-item {
+  padding-bottom: 20px;
+}

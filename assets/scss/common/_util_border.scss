@@ -1,0 +1,30 @@
+.bd {
+    &-no {
+        border: 0 solid;
+    }
+    &-b {
+        &-grey {
+            border-bottom: 1px solid color("grey","lighten-2");
+        }
+    }
+    &-t {
+        &-grey {
+            border-top: 1px solid color("grey","lighten-2");
+        }
+    }
+    &-r {
+        &-grey {
+            border-right: 1px solid color("grey","lighten-2");
+        }
+    }
+    &-l {
+        &-grey {
+            border-left: 1px solid color("grey","lighten-2");
+        }
+    }
+    &-a {
+        &-blue {
+            border: 1px solid color("grey","lighten-2");
+        }
+    }
+}
