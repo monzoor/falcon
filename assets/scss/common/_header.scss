@@ -1,47 +1,89 @@
-/*----------------------- Top Header---------------------------------*/
 
-.header_top {
-    border-bottom: 1px solid #dddfe2;
-    .navbar {
-        min-height: 17px;
-    }
-  li {
-      padding: 0;
-      border-right: 1px solid #dddfe2;
-      padding: 0 10px 0 10px;
-      &:last-child {
-          border-right: 0px solid #dddfe2;
-          padding-right: 0
-      }
-      &:first-child {
-          padding-left: 0
-      }
-      a {
-        color: #333333;
-        padding: 0;
-        @extend .text-xs;
-        &:hover {
-            background-color: transparent;
-            border-bottom: 1px solid black;
+.logo-img {
+    width: 160px
+}
+.categories {
+    margin-left: 20px;
+}
+
+.top-right-menu {
+    margin-top: 5px;
+}
+.search-bar {
+    margin-top: 4px !important;
+}
+.navbar-toggle {
+    position: relative;
+    z-index: 9999;
+}
+@media #{$medium-and-down} {
+    .mobile {
+        position: relative;
+        .navbar-header {
+            margin: 0;
         }
-      }
+        .navbar-toggle {
+            // display: block !important;
+            .cart-qty {
+                left: 15px;
+            }
+        }
+        .search-bar {
+            display: none;
+            top: 76px;
+            .input-group {
+                padding: 0  20px;
+            }
+        }
+        .logo {
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            .logo-img {
+                width: 130px;
+                margin-top: 6px;
+            }
+            a {
+                display: inline-block;
+            }
+        }
+        .categories {
+            margin-left: 0;
+            display: inline-block;
+            a {
+                display: inline-block;
+                padding-left: 0;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      margin-top: 11px;
+      display: block;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 4.5px;
+      margin-bottom: 4.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .collapse.in{
+      display:block !important;
   }
 }
-.logo {
-    &.small {
-        width: 120px;
-    }
-}
-
-// TODO
-.navbar-right {
-    li {
-        a{
-            // white-space: nowrap;
-        }
-    }
-}
-
 // TODO
 .nav-right-section{
   li{
@@ -59,7 +101,6 @@
 
 .cart-count{
      position: relative;
-
         .cart-qty{
           position: absolute;
           left: 30px;

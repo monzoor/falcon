@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="build/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default mobile transparent">
+        <div class="container-fluid pt-s--l pb-s--l">
+            <button type="button" class="navbar-toggle collapsed pa-f--s mr-f--s bd-no" data-toggle="collapse" data-target="#collapse-nav" aria-expanded="false">
+                <div class="pull-left text-s cart-count">
+                    <i class="icon-bag-top-round text-sem-m pull-left mr-s--s"></i>
+                    <span class="cart-qty grey darken-1 white-text text-center small text-bold ">99</span>
+                </div>
+                <div class="pull-left ml-s--s">
+                    <i class="icon-user text-sem-m grey-text"></i>
+                </div>
+            </button>
+            <div class="navbar-header logo">
+
+                <a href="/">
+                    <img src="build/img/logo.png " class="logo-img" alt="shoparu">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 center-abs search-bar">
+                <form class="row" role="search">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="form-control" placeholder="Search" name="q">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default btn-roundless" type="submit">
+                            <i class="icon-search text-s"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="categories">
+                    <a href="<?php echo base_url(); ?>categories" class="grey-text text-bold pa-s--s">
+                        <i class="icon-category-9-box"></i>
+                        <span>Categories</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse" id="collapse-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="cart-section-item">
+                        <a href="#" class="pa-f--s grey-text">
+                            <div class="row">
+                                <div class="col-xs-2 mr-s--s text-s cart-count ml-s--s ml-f--m ml-f--l">
+                                    <i class="icon-bag-top-round text-sem-m pull-left mr-s--s"></i>
+                                    <span class="cart-qty grey darken-1 white-text text-center small text-bold ">99</span>
+                                </div>
+                                <div class="col-xs-9 pr-f--s text-s">
+                                    <a href="" class="mb-f--s grey-text">bla bla asdasd<br> bla bla asdasd</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-xs-2 mr-s--s ml-s--s ml-f--m ml-f--l">
+                                <i class="icon-user text-sem-m grey-text"></i>
+                            </div>
+                            <div class="col-xs-9 pr-f--s text-s auth">
+                                <a href="/sign-up#login" class="grey-text">Log In</a><br>
+                                <a href="/sign-up#registration" class="grey-text">Create Account</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script type="text/javascript" src="build/js/app.js"></script>
+</body>
+</html>
