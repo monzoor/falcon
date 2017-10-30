@@ -30,13 +30,13 @@
 //## Global font base including media query
 html,body {
 	font: baseFontSize($baseFontSize); // 14px/24px
-    @media #{$medium-only} {
-        font: baseFontSize($baseFontSize - 2, $font-family); // 12px/22px
-    }
-
-    @media #{$small-and-down} {
-        font: baseFontSize($baseFontSize - 2, $font-family); // 10px/20px
-    }
+    // @media #{$medium-only} {
+    //     font: baseFontSize($baseFontSize - 2, $font-family); // 12px/22px
+    // }
+	//
+    // @media #{$small-and-down} {
+    //     font: baseFontSize($baseFontSize - 2, $font-family); // 10px/20px
+    // }
 }
 
 //## Global headers style
@@ -61,21 +61,21 @@ h6,.h6 { font-size: rem($h6-fontsize--l); line-height: rem(16); }
 .text-xl { font-size: rem($xl--l); line-height: rem(73); }
 .text-xxl { font-size: rem($xxl--l); line-height: rem(81); }
 
-@media #{$small-and-down} {
-	h1,.h1 { font-size: rem($h1-fontsize--s); line-height: rem(47); }
-	h2,.h2 { font-size: rem($h2-fontsize--s); line-height: rem(42); }
-	h3,.h3 { font-size: rem($h3-fontsize--s); line-height: rem(35); }
-	h4,.h4 { font-size: rem($h4-fontsize--s); line-height: rem(31); }
-	h5,.h5 { font-size: rem($h5-fontsize--s); line-height: rem(28); }
-	h6,.h6 { font-size: rem($h6-fontsize--s); line-height: rem(16); }
-
-	.text-xs { font-size: rem($small-x--s); line-height: rem(14); }
-	.text-s { font-size: rem($small--s); line-height: rem(24); }
-	.text-m { font-size: rem($medium--s); line-height: rem(26); }
-	.text-l { font-size: rem($large--s); line-height: rem(54); }
-	.text-xl { font-size: rem($xl--s); line-height: rem(60); }
-	.text-xxl { font-size: rem($xxl--s); line-height: rem(66); }
-}
+// @media #{$small-and-down} {
+// 	h1,.h1 { font-size: rem($h1-fontsize--s); line-height: rem(47); }
+// 	h2,.h2 { font-size: rem($h2-fontsize--s); line-height: rem(42); }
+// 	h3,.h3 { font-size: rem($h3-fontsize--s); line-height: rem(35); }
+// 	h4,.h4 { font-size: rem($h4-fontsize--s); line-height: rem(31); }
+// 	h5,.h5 { font-size: rem($h5-fontsize--s); line-height: rem(28); }
+// 	h6,.h6 { font-size: rem($h6-fontsize--s); line-height: rem(16); }
+//
+// 	.text-xs { font-size: rem($small-x--s); line-height: rem(14); }
+// 	.text-s { font-size: rem($small--s); line-height: rem(24); }
+// 	.text-m { font-size: rem($medium--s); line-height: rem(26); }
+// 	.text-l { font-size: rem($large--s); line-height: rem(54); }
+// 	.text-xl { font-size: rem($xl--s); line-height: rem(60); }
+// 	.text-xxl { font-size: rem($xxl--s); line-height: rem(66); }
+// }
 
 
 

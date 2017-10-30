@@ -1,0 +1,36 @@
+.auth-wrapper {
+    .auth-toggle-menu {
+        li {
+            a {
+                display: inline-block;
+                @extend .grey-text;
+                @extend .text-darken-1;
+            }
+            &.active {
+                a {
+                    @extend .black-text;
+                }
+            }
+        }
+    }
+}
+
+.devider {
+  border-left: 1px solid #dddfe2;
+  &:before {
+    content: "OR";
+    position: absolute;
+    width: 20px;
+    height: 24px;
+    left: -10px;
+    top: 130px;
+    background-color: white;
+    @extend .text-bold;
+  }
+}
+.pwd-show {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    cursor: pointer;
+}

@@ -1,0 +1,99 @@
+.slideshow { margin: auto;}
+.disabled i{ color: whitesmoke}
+@media only screen and (max-width : 992px) {
+    .slideshow { width: 91% !important; position: relative; margin-top: 10px;}
+    .slider-nav { position: absolute; top: 43%;}
+    .slider-nav.left a i:before { content: '\e810'; font-family: "falcon";}
+    .slider-nav.right a i:before { content: '\e812'; font-family: "falcon";}
+    .slider-nav.right { right: 15px}
+}
+// .slideshow img { width: 100px; height: 130px;}
+
+
+/* thumb */
+.cycle-carousel-wrap img{ margin: 0 0 13px 0; border: 2px solid white;}
+.cycle-carousel-wrap img.selected{ border: 2px solid black}
+
+/* big image slider */
+/*.main-slider-wrapper {position: relative;}*/
+.main-img { margin-top: 26px;}
+
+.main-pager-wrapper a{ position: absolute; z-index: 9999; top: 45%; background-color: rgba(0,0,0,.5); color: white; opacity: 0}
+.main-pager-wrapper a:hover{ opacity: 1}
+.main-img:hover +  .main-pager-wrapper a{ opacity: 1}
+.main-pager-wrapper a#next1{ right: 0}
+.main-img-wrapper { width: 100%;}
+.main-img-wrapper img{ width: 100%;}
+
+.product-menu {
+    .nav {
+        li {
+            a {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            &:last-child {
+                a {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.toolbar {
+    border-top: 1px solid #dddfe2;
+    border-bottom: 1px solid #eaeaea;
+    line-height: 0;
+    .filter {
+        &-size {
+            width: 129px;
+        }
+        &-brand {
+            width: 145px;
+        }
+    }
+    .pagination > li > a {
+        border-radius: 0 !important;
+        @extend .black-text;
+        height: 36px;
+        border: 0px solid #ddd;
+        &:first-child, &:last-child {
+            border: 1px solid #ddd;
+        }
+    }
+}
+
+.more-description {
+    h1,h2,h3,h4,h5,h6 {
+        margin-bottom: 10px;
+    }
+    ul,img {
+        margin-bottom: 20px;
+    }
+    li {
+        margin-bottom: 5px;
+        list-style: inherit !important;
+        margin-left: 20px;
+    }
+}
+
+
+.product-details-slider-hor {
+    padding-right: 0 !important;
+    padding-left: 105px !important;
+    .lSPager {
+        left: 0 !important;
+    }
+    img {
+        width: 100%;
+    }
+}
+.product-details-slider-ver {
+    // padding-right: 0 !important;
+    // padding-left: 105px !important;
+    img {
+        width: 100%;
+    }
+}

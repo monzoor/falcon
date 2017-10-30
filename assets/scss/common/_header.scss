@@ -1,4 +1,4 @@
-
+// TODO: refactor
 .logo-img {
     width: 160px
 }
@@ -16,9 +16,19 @@
     position: relative;
     z-index: 9999;
 }
+.total-price {
+    display: block;
+}
+
 @media #{$medium-and-down} {
+    header {
+        margin-bottom: 60px;
+    }
     .mobile {
         position: relative;
+        .input-group-btn .btn {
+            padding-bottom: 13px;
+        }
         .navbar-header {
             margin: 0;
         }
@@ -28,9 +38,12 @@
                 left: 15px;
             }
         }
+        .mobile-view {
+            margin: 60px 0 0 0;
+        }
         .search-bar {
-            display: none;
-            top: 76px;
+            // display: none;
+            top: 56px;
             .input-group {
                 padding: 0  20px;
             }
@@ -48,6 +61,18 @@
                 display: inline-block;
             }
         }
+        .auth,.mobile-cart {
+            font-size: 20px;
+            a {
+                display: block;
+                &:last-child {
+                    // &.reg {
+                    //
+                    // }
+                    margin-bottom: 15px;
+                }
+            }
+        }
         .categories {
             margin-left: 0;
             display: inline-block;
@@ -59,29 +84,31 @@
     }
 }
 @media (max-width: 991px) {
-  .navbar-header {
-      float: none;
-  }
-  .navbar-left,.navbar-right {
-      float: none !important;
-  }
-  .navbar-toggle {
-      margin-top: 11px;
-      display: block;
-  }
-  .navbar-collapse.collapse {
-      display: none!important;
-  }
-  .navbar-nav {
-      float: none!important;
-      margin-top: 4.5px;
-      margin-bottom: 4.5px;
-  }
-  .navbar-nav>li {
-      float: none;
-  }
-  .collapse.in{
-      display:block !important;
+  header {
+      .navbar-header {
+          float: none;
+      }
+      .navbar-left,.navbar-right {
+          float: none !important;
+      }
+      .navbar-toggle {
+          margin-top: 11px;
+          display: block;
+      }
+      .navbar-collapse.collapse {
+          display: none!important;
+      }
+      .navbar-nav {
+          float: none!important;
+          margin-top: 4.5px;
+          margin-bottom: 4.5px;
+      }
+      .navbar-nav>li {
+          float: none;
+      }
+      .collapse.in{
+          display:block !important;
+      }
   }
 }
 // TODO
